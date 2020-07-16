@@ -54,7 +54,7 @@
  * NOTE: If you change these, also change the error_reporting() code below
  */
 	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
-
+	
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -115,7 +115,7 @@ switch (ENVIRONMENT)
  * NO TRAILING SLASH!
  */
 	$application_folder = 'application';
-
+	
 /*
  *---------------------------------------------------------------
  * VIEW DIRECTORY NAME
