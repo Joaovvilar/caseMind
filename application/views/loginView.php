@@ -154,6 +154,7 @@ body {
             <div class="card-body">
                 <h5 class="card-title text-center">Entrar</h5>
                 <form class="form-signin">
+                    
                 <div class="form-label-group">
                     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                     <label for="inputEmail">Email ou CPF</label>
