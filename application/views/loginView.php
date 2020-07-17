@@ -138,12 +138,12 @@ body {
 </style>
 <html>
     <head>
-
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    
     <title>Login - Case</title>
+    
     </head>
 
     <body>
@@ -170,8 +170,7 @@ body {
                 </div>
                 <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Entrar</button>
                 <hr class="my-4">
-                <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Entrar com Google</button>
-                <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Entrar com Facebook</button>
+                <button class="btn btn-lg btn-google btn-block text-uppercase" onclick="window.location.href='/caseMind/index.php/cadastroController/';"><i class="fab fa-google mr-2"></i> Cadastre-se</button>
                 </form>
             </div>
             </div>
