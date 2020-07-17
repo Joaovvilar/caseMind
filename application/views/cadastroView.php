@@ -157,29 +157,29 @@ body {
             <div class="card card-signin my-5">
             <div class="card-body">
                 <h5 class="card-title text-center">Cadastre-se</h5>
-                <form class="form-signin" method="post" action="/caseMind/index.php/novoController/">
+                <form class="form-signin" method="post" action="<?php echo site_url('cadastroController/registrar') ?>">
                     
                 <div class="form-label-group">
-                    <input type="text" id="nome" class="form-control" placeholder="Email address" required autofocus>
+                    <input type="text" id="nome" name="nome" class="form-control" placeholder="text" required autofocus>
                     <label for="nome">Nome</label>
                 </div>
 
                 <div class="form-label-group">
-                    <input type="text" id="cpf" class="form-control" placeholder="Email address" required autofocus>
+                    <input type="text" id="cpf" name="cpf" class="form-control" placeholder="numbers" required autofocus>
                     <label for="cpf">CPF</label>
                 </div>
 
                 <div class="form-label-group">
-                    <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required autofocus>
                     <label for="email">Email</label>
                 </div>
 
                 <div class="form-label-group">
-                    <input type="password" id="senha" class="form-control" placeholder="Password" required>
+                    <input type="password" id="senha" name="senha" class="form-control" placeholder="Password" required>
                     <label for="senha">Senha</label>
                 </div>
                 <hr class="my-4">
-                <button class="btn btn-lg btn-google btn-block text-uppercase" name="submeter" type="submit" ><i class="fab fa-google mr-2"></i>Submeter</button>
+                <button class="btn btn-lg btn-google btn-block text-uppercase" name="submeter" value="save" type="submit" ><i class="fab fa-google mr-2"></i>Submeter</button>
                 </form>
             </div>
             </div>
