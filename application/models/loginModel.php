@@ -8,8 +8,8 @@ class loginModel extends CI_Model {
 			$this->load->database();
 	}
 
-	logarUsuario($email, $senha){
-        $this->db->where("email", $email);
+	public function logarUsuario($login, $senha){
+        $this->db->where("email", $login);
         $this->db->where("senha", $senha);
         $usuario = $this->db->get("users")->row_array();
         return $usuario;

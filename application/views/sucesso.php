@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <style>h1 {text-align: center;}</style>
+
     <title>Dashboard</title>
   </head>
   <body>
@@ -29,7 +29,7 @@
 
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/index.php/dashboardController/">Case Mind - Dashboard: Admin</a>
+        <a class="navbar-brand" href="/index.php/dashboardController/">Case Mind - Dashboard</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -51,38 +51,9 @@
         </nav>
         <br>
 
-
-<div class='container'>
-        <h1>Usuários</h1>
-        <!-- Tabelinha -->
-        <table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">ID</th>
-      <th scope="col">Nome</th>
-      <th scope="col">CPF</th>
-      <th scope="col">E-mail</th>
-      <th scope="col">Senha</th>
-      <th scope="col">Acesso</th>
-      <th scopt="col">Ações</th>
-    </tr>
-  </thead>
-  <tbody>
-  <?php foreach($result as $row) {?>
-    <tr> 
-      <th scope="row"><?php echo $row->id; ?></th>
-      <td><?php echo $row->nome; ?></td>
-      <td><?php echo $row->cpf; ?></td>
-      <td><?php echo $row->email; ?></td>
-      <td><?php echo $row->senha; ?></td>
-      <td><?php echo $row->acesso; ?></td>
-      <td><a href="<?php echo site_url('/index.php/dashboardController/edit/'.$row->id);?>">Editar</a>
-       | <a href="<?php echo site_url('/index.php/dashboardController/delete/'.$row->id);?> ">Deletar</a></td>
-    </tr>
-    <?php } ?>
-  </tbody>
-</table>
-</div>
+        <div class="container">
+            <h1>Usuário cadastrado com sucesso.</h1>
+        </div>
 
   </body>
 </html>

@@ -153,15 +153,15 @@ body {
             <div class="card card-signin my-5">
             <div class="card-body">
                 <h5 class="card-title text-center">Entrar</h5>
-                <form class="form-signin">
+                <form class="form-signin" method="post" action="<?php echo site_url('/index.php/loginController/autenticar') ?>">
                     
                 <div class="form-label-group">
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <input type="email" name="login" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                     <label for="inputEmail">Email ou CPF</label>
                 </div>
 
                 <div class="form-label-group">
-                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <input type="password" name="senha" id="inputPassword" class="form-control" placeholder="Password" required>
                     <label for="inputPassword">Senha</label>
                 </div>
 
@@ -169,7 +169,7 @@ body {
                     <input type="checkbox" class="custom-control-input" id="customCheck1">
                     <label class="custom-control-label" for="customCheck1">Lembrar minha senha</label>
                 </div>
-                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Entrar</button>
+                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" onclick="window.location.href='/caseMind/index.php/loginController/autenticar';">Entrar</button>
                 <hr class="my-4">
                 <button class="btn btn-lg btn-google btn-block text-uppercase" onclick="window.location.href='/caseMind/index.php/cadastroController/';"><i class="fab fa-google mr-2"></i> Cadastre-se</button>
                 </form>

@@ -157,7 +157,7 @@ body {
             <div class="card card-signin my-5">
             <div class="card-body">
                 <h5 class="card-title text-center">Cadastre-se</h5>
-                <form class="form-signin" method="post" action="<?php echo site_url('cadastroController/registrar') ?>">
+              <form class="form-signin" method="post" action="<?php echo site_url('/index.php/cadastroController/registrar') ?>">
                     
                 <div class="form-label-group">
                     <input type="text" id="nome" name="nome" class="form-control" placeholder="text" required autofocus>
@@ -180,7 +180,7 @@ body {
                 </div>
                 <hr class="my-4">
                 <button class="btn btn-lg btn-google btn-block text-uppercase" name="submeter" value="save" type="submit" ><i class="fab fa-google mr-2"></i>Submeter</button>
-                </form>
+              </form>
             </div>
             </div>
         </div>

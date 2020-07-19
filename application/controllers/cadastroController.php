@@ -14,11 +14,7 @@ class cadastroController extends CI_Controller {
 
 	public function registrar(){
 		$this->cadastroModel->salvar();
-		redirect("cadastroController");
+		$this->load->view("sucesso");
         
-		// var_dump($user);
-		// $this->load->model('cadastroModel');
-		// $this->cadastroModel->salvar($user);
-		// $this->load->view('loginView');
     }
 }
