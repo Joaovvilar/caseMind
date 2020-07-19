@@ -1,14 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class CrudModel extends CI_Model {
+class dashboardModel extends CI_Model {
 
 	public function __construct()
 	{
 			$this->load->database();
 	}
 
-	function createData(){
+	public function createData(){
 		$data = array (
 			'nome' => $this->input->post('nome'),
 			'cpf' => $this->input->post('cpf'),
@@ -17,5 +17,10 @@ class CrudModel extends CI_Model {
 			// aqui eu deveria receber uma imagem tb
 		);
 		$this->db->insert('users');
+	}
+
+	public function pegarDados(){
+			$query = $this->db->query(	'SELECT * FROM users');
+			return $query->result();
 	}
 }

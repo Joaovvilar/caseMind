@@ -10,8 +10,12 @@ class dashboardController extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('dashboardView');
+		$this->load->model('dashboardModel');
+		$data['result'] = $this->dashboardModel->pegarDados();
+		$this->load->view('dashboardView',$data);
 	}
 
-    
+    public function edit(){
+		$this->load->view('editDashboard',$data);
+	}
 }
