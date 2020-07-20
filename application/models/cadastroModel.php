@@ -8,6 +8,7 @@ class cadastroModel extends CI_Model {
 			'nome' => $this->input->post('nome'),
 			'cpf' => $this->input->post('cpf'),
 			'email' => $this->input->post('email'),
+			'acesso'=> 1,
 			'senha' => md5($this->input->post('senha'))
 		);
         $this->db->insert('users', $user);

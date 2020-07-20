@@ -11,8 +11,14 @@ class dashboardController extends CI_Controller {
 	public function index()
 	{
 		$this->load->model('dashboardModel');
-		$data['result'] = $this->dashboardModel->pegarDados();
-		$this->load->view('dashboardView',$data);
+
+		if($_SESSION['acesso'] == 999){
+			$data['result'] = $this->dashboardModel->pegarDados();
+			$this->load->view('dashboardView',$data);
+		}else if($_SESSION['acesso'] == 1){
+			$user['row'] = $this->dashboardModel->pegarId($_SESSION['id']);
+			$this->load->view('comumView',$user);
+		}
 	}
 
 	public function edit($id){

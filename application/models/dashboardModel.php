@@ -37,7 +37,7 @@ class dashboardModel extends CI_Model {
 			'cpf' => $this->input->post('cpf'),
 			'email' => $this->input->post('email'),
 			'acesso' => $this->input->post('acesso'),
-			'senha' => $this->input->post('senha')
+			'senha' => md5($this->input->post('senha'))
 		);
 
 		$this->db->where('id',$id);
@@ -48,4 +48,5 @@ class dashboardModel extends CI_Model {
 		$this->db->where('id',$id);
 		$this->db->delete('users');
 	}
+
 }

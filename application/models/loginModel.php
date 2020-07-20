@@ -14,4 +14,8 @@ class loginModel extends CI_Model {
         $usuario = $this->db->get("users")->row_array();
         return $usuario;
     }
+
+    public function selecionarUsuario(){
+
+    }
 }
