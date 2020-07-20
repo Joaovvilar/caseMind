@@ -54,7 +54,7 @@
 
 <div class='container'>
         <h1>Usuários</h1>
-        <!-- Tabelinha -->
+        <!-- Tabelinha de cima para exibir as informações -->
         <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -68,6 +68,7 @@
     </tr>
   </thead>
   <tbody>
+    <!-- Aqui são exibidos os dados-->
   <?php foreach($result as $row) {?>
     <tr> 
       <th scope="row"><?php echo $row->id; ?></th>

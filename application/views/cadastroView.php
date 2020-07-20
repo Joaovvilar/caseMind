@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+  <!-- Estilo do site -->
 <style>
     :root {
   --input-padding-x: 1.5rem;
@@ -151,12 +151,14 @@ body {
         <title>Cadastro</title>
     </head>
     <body>
+
     <div class="container">
         <div class="row">
         <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
             <div class="card card-signin my-5">
             <div class="card-body">
                 <h5 class="card-title text-center">Cadastre-se</h5>
+                <!-- Aqui começa o formulário para cadastro -->
               <form class="form-signin" method="post" action="<?php echo site_url('/index.php/cadastroController/registrar') ?>">
                     
                 <div class="form-label-group">

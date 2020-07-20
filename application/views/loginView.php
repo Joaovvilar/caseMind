@@ -147,6 +147,7 @@ body {
     </head>
 
     <body>
+      <!-- Aqui segue-se o mesmo padrão das outras views, exibindo e recolhendo os dados -->
         <div class="container">
         <div class="row">
         <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
@@ -156,8 +157,8 @@ body {
                 <form class="form-signin" method="post" action="<?php echo site_url('/index.php/loginController/autenticar') ?>">
                     
                 <div class="form-label-group">
-                    <input type="email" name="login" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                    <label for="inputEmail">Email ou CPF</label>
+                    <input type="cpf" name="login" id="inputcpf" class="form-control" placeholder="cpf address" required autofocus>
+                    <label for="cpf">Email ou CPF</label>
                 </div>
 
                 <div class="form-label-group">

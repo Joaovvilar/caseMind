@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class cadastroModel extends CI_Model {
 
+	//Salva um novo usuário no sistema com acesso '1', comum
 	public function salvar(){
         $user = array(
 			'nome' => $this->input->post('nome'),

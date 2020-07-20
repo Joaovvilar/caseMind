@@ -8,6 +8,7 @@ class dashboardModel extends CI_Model {
 			$this->load->database();
 	}
 
+	//Cria e insere as informações ded um usuário no banco de dados
 	public function createData(){
 		$data = array (
 			'nome' => $this->input->post('nome'),
@@ -19,17 +20,20 @@ class dashboardModel extends CI_Model {
 		$this->db->insert('users');
 	}
 
+	//Pega as informações de todos os usuários e exibe em uma tabela para o admin
 	public function pegarDados(){
 			$query = $this->db->query('SELECT * FROM users');
 			return $query->result();
 	}
 
+	//Recupera as informações de um usuário de acordo com seu ID
 	public function pegarId($id){
 		$query = $this->db->query("SELECT * FROM users WHERE users.id = $id");
 		
 		return $query->row();
 }
 
+	//Atualiza os dados do usuário
 	public function atualizarDados($id){
 		
 		$data = array (
@@ -44,6 +48,7 @@ class dashboardModel extends CI_Model {
 		$this->db->update('users',$data);
 	}
 
+	//Deleta por completo um usuário do sistema (função extra que não constava no case)
 	public function deletarDados($id){
 		$this->db->where('id',$id);
 		$this->db->delete('users');
